@@ -1,7 +1,25 @@
 aid: overtime
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/overtime.png
 name: Overtime
-description: Overtime is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Overtime is a sports media and entertainment company building disruptive,
+  digital-first sports leagues and intellectual property aimed at the next generation
+  of fans and athletes. It operates branded leagues including Overtime Elite (OTE)
+  basketball, OT7 seven-on-seven football, and OT Select women's basketball, and reaches
+  nearly 100 million followers across social platforms. Backed by a16z, Overtime
+  generates revenue through sponsorships, merchandise, media rights, and brand
+  partnerships, reimagining how Gen Z engages with sports through content-first
+  entertainment.
 url: https://raw.githubusercontent.com/api-evangelist/overtime/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +29,35 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Sports
+- Media
+- Entertainment
+- Sports League
+- Basketball
+- Content
+- Gen Z
 apis: []
+common:
+- type: DomainSecurity
+  url: security/overtime-domain-security.yml
+- type: Website
+  url: https://overtime.tv
+- type: TermsOfService
+  url: https://overtime.tv/terms
+- type: PrivacyPolicy
+  url: https://overtime.tv/privacy
+- type: Support
+  url: https://overtime.tv/contact
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
